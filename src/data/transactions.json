@@ -11,132 +11,119 @@
         "icon": "🛒",
         "description": "Grocery Shopping",
         "date": "2025-01-05",
-        "amount": -125.50
+        "amount": -125.50,
+        "category": "Others"
     },
     {
         "id": 3,
         "icon": "🎬",
         "description": "Movie Night",
         "date": "2025-01-05",
-        "amount": -45.00
-    },
-    {
-        "id": 4,
-        "icon": "💰",
-        "description": "Client Payment",
-        "date": "2025-01-06",
-        "amount": 750.00
+        "amount": -45.00,
+        "category": "Entertainment"
     },
     {
         "id": 5,
         "icon": "🚗",
         "description": "Gas",
         "date": "2025-01-06",
-        "amount": -60.00
+        "amount": -60.00,
+        "category": "Others"
     },
     {
         "id": 6,
         "icon": "☕",
         "description": "Coffee Shop",
         "date": "2025-01-06",
-        "amount": -15.75
-    },
-    {
-        "id": 7,
-        "icon": "💰",
-        "description": "Salary Deposit",
-        "date": "2025-01-07",
-        "amount": 2500.00
+        "amount": -15.75,
+        "category": "Entertainment"
     },
     {
         "id": 8,
         "icon": "🏠",
         "description": "Rent Payment",
         "date": "2025-01-07",
-        "amount": -1500.00
+        "amount": -1500.00,
+        "category": "Expense"
     },
     {
         "id": 9,
         "icon": "📱",
         "description": "Phone Bill",
         "date": "2025-01-07",
-        "amount": -85.00
-    },
-    {
-        "id": 10,
-        "icon": "💸",
-        "description": "Side Gig Payment",
-        "date": "2025-01-08",
-        "amount": 300.00
+        "amount": -85.00,
+        "category": "Expense"
     },
     {
         "id": 11,
         "icon": "🍽️",
         "description": "Restaurant",
         "date": "2025-01-08",
-        "amount": -75.25
-    },
-    {
-        "id": 12,
-        "icon": "💰",
-        "description": "Investment Return",
-        "date": "2025-01-09",
-        "amount": 450.00
+        "amount": -75.25,
+        "category": "Entertainment"
     },
     {
         "id": 13,
         "icon": "💳",
         "description": "Credit Card Payment",
         "date": "2025-01-09",
-        "amount": -400.00
+        "amount": -400.00,
+        "category": "Expense"
     },
     {
         "id": 14,
         "icon": "🎮",
         "description": "Entertainment",
         "date": "2025-01-09",
-        "amount": -59.99
-    },
-    {
-        "id": 15,
-        "icon": "💰",
-        "description": "Bonus Payment",
-        "date": "2025-01-10",
-        "amount": 1000.00
+        "amount": -59.99,
+        "category": "Entertainment"
     },
     {
         "id": 16,
         "icon": "🏪",
         "description": "Groceries",
         "date": "2025-01-10",
-        "amount": -200.00
+        "amount": -200.00,
+        "category": "Others"
     },
     {
         "id": 17,
         "icon": "🎯",
         "description": "Shopping",
         "date": "2025-01-10",
-        "amount": -150.00
-    },
-    {
-        "id": 18,
-        "icon": "💰",
-        "description": "Part-time Work",
-        "date": "2025-01-11",
-        "amount": 250.00
+        "amount": -150.00,
+        "category": "Others"
     },
     {
         "id": 19,
         "icon": "🎟️",
         "description": "Concert Tickets",
         "date": "2025-01-11",
-        "amount": -180.00
+        "amount": -180.00,
+        "category": "Entertainment"
     },
     {
         "id": 20,
         "icon": "🍕",
         "description": "Food Delivery",
         "date": "2025-01-11",
-        "amount": -45.50
+        "amount": -45.50,
+        "category": "Entertainment"
+    },
+    {
+        "id": 21,
+        "icon": "📈",
+        "description": "Stock Investment",
+        "date": "2025-01-10",
+        "amount": -500.00,
+        "category": "Investment"
+    },
+    {
+        "id": 22,
+        "icon": "💹",
+        "description": "Mutual Fund Investment",
+        "date": "2025-01-07",
+        "amount": -300.00,
+        "category": "Investment"
     }
 ]
