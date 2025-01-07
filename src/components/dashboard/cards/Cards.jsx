@@ -20,7 +20,7 @@ const Cards = () => {
           See All
         </Button>
       </Title>
-      <Stack direction={"row"} spacing={4}>
+      <Stack direction={"row"} gap={4}>
         {creditCards.slice(0, 2).map((card) => (
           <CreditCard {...{ card }} key={card.cardNumber} />
         ))}

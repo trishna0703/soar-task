@@ -10,14 +10,19 @@ import BalanceHistory from "./balanceHistory/BalanceHistory";
 
 const DashboardContent = () => {
   return (
-    <Box className="dashboardContent">
+    <Stack
+      direction={"row"}
+      gap={4}
+      flexWrap={"wrap"}
+      className="dashboardContent"
+    >
       <Cards />
       <Transactions />
       <WeeklyActivity />
       <ExpenseStats />
       <QuickTransfer />
       <BalanceHistory />
-    </Box>
+    </Stack>
   );
 };
 

@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "icon": "💸",
+        "description": "Purchase at Grocery Store",
+        "date": "2025-01-05",
+        "amount": -45.50
+    },
+    {
+        "id": 2,
+        "icon": "💰",
+        "description": "Salary Payment",
+        "date": "2025-01-03",
+        "amount": 2000.00
+    },
+    {
+        "id": 3,
+        "icon": "🍔",
+        "description": "Lunch at Restaurant",
+        "date": "2025-01-02",
+        "amount": -20.75
+    },
+    {
+        "id": 4,
+        "icon": "🏠",
+        "description": "Rent Payment",
+        "date": "2025-01-01",
+        "amount": -1200.00
+    },
+    {
+        "id": 5,
+        "icon": "🎁",
+        "description": "Gift Purchase",
+        "date": "2024-12-28",
+        "amount": -50.00
+    },
+    {
+        "id": 6,
+        "icon": "💳",
+        "description": "Credit Card Payment",
+        "date": "2024-12-25",
+        "amount": -200.00
+    },
+    {
+        "id": 7,
+        "icon": "🏥",
+        "description": "Medical Expenses",
+        "date": "2024-12-20",
+        "amount": -150.00
+    }
+]

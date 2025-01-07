@@ -5,7 +5,7 @@ const Title = ({ title, children }) => {
   return (
     <Stack
       justifyContent={"space-between"}
-      alignItems={"center"}
+      alignItems={"flex-start"}
       direction={"row"}
     >
       <Typography component={"h3"} className="sectionTitle">
