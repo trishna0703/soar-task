@@ -1,51 +1,142 @@
 [
     {
         "id": 1,
-        "icon": "💸",
-        "description": "Purchase at Grocery Store",
+        "icon": "💰",
+        "description": "Freelance Payment",
         "date": "2025-01-05",
-        "amount": -45.50
+        "amount": 500.00
     },
     {
         "id": 2,
-        "icon": "💰",
-        "description": "Salary Payment",
-        "date": "2025-01-03",
-        "amount": 2000.00
+        "icon": "🛒",
+        "description": "Grocery Shopping",
+        "date": "2025-01-05",
+        "amount": -125.50
     },
     {
         "id": 3,
-        "icon": "🍔",
-        "description": "Lunch at Restaurant",
-        "date": "2025-01-02",
-        "amount": -20.75
+        "icon": "🎬",
+        "description": "Movie Night",
+        "date": "2025-01-05",
+        "amount": -45.00
     },
     {
         "id": 4,
-        "icon": "🏠",
-        "description": "Rent Payment",
-        "date": "2025-01-01",
-        "amount": -1200.00
+        "icon": "💰",
+        "description": "Client Payment",
+        "date": "2025-01-06",
+        "amount": 750.00
     },
     {
         "id": 5,
-        "icon": "🎁",
-        "description": "Gift Purchase",
-        "date": "2024-12-28",
-        "amount": -50.00
+        "icon": "🚗",
+        "description": "Gas",
+        "date": "2025-01-06",
+        "amount": -60.00
     },
     {
         "id": 6,
-        "icon": "💳",
-        "description": "Credit Card Payment",
-        "date": "2024-12-25",
-        "amount": -200.00
+        "icon": "☕",
+        "description": "Coffee Shop",
+        "date": "2025-01-06",
+        "amount": -15.75
     },
     {
         "id": 7,
-        "icon": "🏥",
-        "description": "Medical Expenses",
-        "date": "2024-12-20",
+        "icon": "💰",
+        "description": "Salary Deposit",
+        "date": "2025-01-07",
+        "amount": 2500.00
+    },
+    {
+        "id": 8,
+        "icon": "🏠",
+        "description": "Rent Payment",
+        "date": "2025-01-07",
+        "amount": -1500.00
+    },
+    {
+        "id": 9,
+        "icon": "📱",
+        "description": "Phone Bill",
+        "date": "2025-01-07",
+        "amount": -85.00
+    },
+    {
+        "id": 10,
+        "icon": "💸",
+        "description": "Side Gig Payment",
+        "date": "2025-01-08",
+        "amount": 300.00
+    },
+    {
+        "id": 11,
+        "icon": "🍽️",
+        "description": "Restaurant",
+        "date": "2025-01-08",
+        "amount": -75.25
+    },
+    {
+        "id": 12,
+        "icon": "💰",
+        "description": "Investment Return",
+        "date": "2025-01-09",
+        "amount": 450.00
+    },
+    {
+        "id": 13,
+        "icon": "💳",
+        "description": "Credit Card Payment",
+        "date": "2025-01-09",
+        "amount": -400.00
+    },
+    {
+        "id": 14,
+        "icon": "🎮",
+        "description": "Entertainment",
+        "date": "2025-01-09",
+        "amount": -59.99
+    },
+    {
+        "id": 15,
+        "icon": "💰",
+        "description": "Bonus Payment",
+        "date": "2025-01-10",
+        "amount": 1000.00
+    },
+    {
+        "id": 16,
+        "icon": "🏪",
+        "description": "Groceries",
+        "date": "2025-01-10",
+        "amount": -200.00
+    },
+    {
+        "id": 17,
+        "icon": "🎯",
+        "description": "Shopping",
+        "date": "2025-01-10",
         "amount": -150.00
+    },
+    {
+        "id": 18,
+        "icon": "💰",
+        "description": "Part-time Work",
+        "date": "2025-01-11",
+        "amount": 250.00
+    },
+    {
+        "id": 19,
+        "icon": "🎟️",
+        "description": "Concert Tickets",
+        "date": "2025-01-11",
+        "amount": -180.00
+    },
+    {
+        "id": 20,
+        "icon": "🍕",
+        "description": "Food Delivery",
+        "date": "2025-01-11",
+        "amount": -45.50
     }
 ]

@@ -1,8 +1,9 @@
-import { Box, Card, CardContent, Stack, Typography } from "@mui/material";
 import React from "react";
-import Title from "../../common/title/Title";
-import useTransactionsHistory from "../../../hooks/useTransactionsHistory";
 import "./Transactions.scss";
+import Title from "../../common/title/Title";
+import { Box, Stack, Typography } from "@mui/material";
+import useTransactionsHistory from "../../../hooks/useTransactionsHistory";
+
 const Transactions = () => {
   const recentTransactions = useTransactionsHistory();
   const formatDate = (dateString) => {
@@ -14,11 +15,11 @@ const Transactions = () => {
     }).format(date);
   };
   return (
-    <Box>
+    <Box width={"30%"}>
       <Title title="Recent Transactions" />
       <Box className="recentTransactions">
         <Box className="recentTransactionsInner">
-          {recentTransactions.map((transaction) => {
+          {recentTransactions.slice(0, 3).map((transaction) => {
             return (
               <Stack
                 direction="row"
