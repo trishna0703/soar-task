@@ -1,0 +1,66 @@
+@import '../../index';
+
+.sidenav {
+    width: 18vw;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #E6EFF5;
+
+    .menuItem {
+        justify-content: center;
+        padding: 14px 40px;
+        margin-top: 0;
+        border-left: 7px solid transparent;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        font-family: $font-family;
+
+        h3 {
+            line-height: 21.78px;
+            text-align: left;
+            color: $lightShade1;
+            width: 80%;
+        }
+
+        .menuIcon {
+            width: 20%;
+
+            svg {
+                width: 25px;
+            }
+        }
+    }
+
+    .menuItem.active {
+        border-left-color: $darkShade1;
+
+        h3 {
+            color: $darkShade1;
+        }
+
+        svg {
+            path {
+                fill: $darkShade1
+            }
+        }
+    }
+
+    .logoWrapper {
+        padding: 32px 40px;
+        width: max-content;
+
+        img {
+            width: 20%;
+        }
+
+        .logoTitle {
+            font-family: $font-family;
+            font-size: 25px;
+            font-weight: 700;
+            display: inline-block;
+            margin: 0;
+        }
+    }
+}

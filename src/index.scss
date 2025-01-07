@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'variables';
+@import 'common.scss';
+
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $primary-text-color;
+}
+
+.main-content {
+    width: 82%;
+    height: 90%;
+    margin-top: auto;
+    margin-left: auto;
+    background-color: $lightShade2;
+    padding: 2rem;
+}

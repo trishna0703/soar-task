@@ -1,0 +1,73 @@
+@import '../../index';
+
+.header {
+    width: 82%;
+    margin-left: auto;
+    border-bottom: 1px solid #E6EFF5;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .pageTitle {
+        font-size: 28px !important;
+        font-weight: 600;
+        line-height: 33px;
+        font-family: $font-family;
+    }
+
+    .metaSection {
+        width: 70%;
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+
+    .searchInput {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $lightShade2;
+        padding: 8px 16px;
+        border-radius: 50px;
+        font-size: 14px;
+
+        .MuiInputBase-root::before,
+        .MuiInputBase-root::after {
+            display: none;
+        }
+
+        input {
+            padding-left: 10px;
+        }
+    }
+
+    .round-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $lightShade2;
+        padding: 10px;
+        margin: 6px 10px;
+        border-radius: 50px;
+        width: 45px;
+        height: 45px;
+
+        svg {
+            path {
+                fill: $lightShade3;
+            }
+        }
+    }
+
+    .avatar {
+        display: inline-block;
+        margin: 4px 8px;
+        width: 50px;
+        height: 50px;
+
+        div {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
