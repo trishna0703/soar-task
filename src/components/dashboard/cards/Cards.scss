@@ -1,0 +1,76 @@
+@import '../../../index';
+
+.creditCard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    border-radius: 25px;
+
+    * {
+        font-family: $font-family !important;
+
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    .cardRowWrapper {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 1.5rem;
+    }
+
+    .cardBalance {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .cardNumberSection {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+
+        .cardNumber {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+}
+
+.visa {
+    background: #DFEAF2;
+    color: $darkShade1;
+
+    label {
+        color: $darkShade1;
+        opacity: 0.8;
+    }
+
+    .cardChip {
+        svg {
+            path {
+                fill: $darkShade1
+            }
+        }
+    }
+
+}
+
+.master {
+    color: $lightText;
+    background: linear-gradient(107.38deg, #5B5A6F 2.61%, #000000 101.2%);
+
+    label {
+        color: $lightShade2;
+    }
+}
+
+.amex {
+    color: $lightText;
+    background: linear-gradient(107.38deg, #68738c 2.61%, #1d2f3e 101.2%);
+
+    label {
+        color: $lightShade2;
+    }
+}

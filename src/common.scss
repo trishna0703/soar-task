@@ -1,13 +1,20 @@
 .main-content {
     .sectionTitle {
-        font-size: 22px !important;
-        font-weight: 600 !important;
-        font-family: $font-family !important;
+        font-size: 22px;
+        font-weight: 600;
+        font-family: $font-family;
         color: $primary-text-color;
     }
 
     .btn-link {
         color: $primary-text-color;
-        font-size: 16px !important;
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: 600;
+
+        &:hover {
+            background-color: transparent;
+            color: $secondary-text-color;
+        }
     }
 }
