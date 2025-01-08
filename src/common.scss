@@ -1,4 +1,8 @@
 .main-content {
+    * {
+        font-family: $font-family !important;
+    }
+
     .sectionTitle {
         font-size: 22px;
         font-weight: 600;
@@ -29,4 +33,74 @@
         border-radius: 25px;
         padding: 1.5rem 0;
     }
+
+    .avatar {
+        overflow: hidden;
+        border-radius: 50px;
+        width: max-content;
+        display: inline-block;
+    }
+
+    .inputFieldWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+
+        label {
+            font-size: 14px !important;
+            color: $darkShade1;
+        }
+
+        .customInputField {
+            border: 1px solid $lightShade4;
+            padding: 8px 12px;
+            border-radius: 10px;
+            font-size: 14px !important;
+
+            &::placeholder {
+                color: $lightShade3;
+                font-size: 14px !important;
+            }
+        }
+
+        .field-error {
+            border-color: red;
+
+        }
+
+        .validationMsg {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    }
+
+    .MuiInputBase-root::before,
+    .MuiInputBase-root::after {
+        display: none;
+    }
+
+    .primaryButton {
+        background-color: $secondary-text-color;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: $lightText;
+        text-transform: capitalize;
+        font-family: $font-family;
+        margin: 2rem;
+        min-width: 200px;
+    }
+
+    .disabledButton {
+        background-color: $lightShade4;
+        cursor: not-allowed;
+        color: $lightShade2;
+    }
+
+    .avatarPreview {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+
 }

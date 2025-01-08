@@ -2,9 +2,7 @@ import { Box } from "@mui/material";
 import React from "react";
 import Title from "../../common/title/Title";
 import {
-  LineChart,
   AreaChart,
-  Line,
   XAxis,
   YAxis,
   CartesianGrid,

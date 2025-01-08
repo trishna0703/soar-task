@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Input, Stack, Typography } from "@mui/material";
+import { Box, Button, Input, Stack, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Title from "../../common/title/Title";
 import useFavoriteTransfers from "../../../hooks/useFavoriteTransfers";

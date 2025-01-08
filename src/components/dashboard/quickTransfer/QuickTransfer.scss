@@ -1,11 +1,5 @@
 @import '../../../index';
 
-.avatar {
-    overflow: hidden;
-    border-radius: 50px;
-    width: max-content;
-}
-
 .quickTransfersWrapper {
     width: 450px;
     overflow: hidden;
@@ -58,11 +52,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        .MuiInputBase-root::before,
-        .MuiInputBase-root::after {
-            display: none;
-        }
 
         button {
             background-color: $secondary-text-color;

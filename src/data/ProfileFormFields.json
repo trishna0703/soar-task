@@ -1,0 +1,72 @@
+{
+  "name": {
+    "label": "Your Name",
+    "key": "name",
+    "placeholder": "Enter your name",
+    "inputType": "text",
+    "validationMessage": "Name is required and must be at least 3 characters."
+  },
+  "username": {
+    "label": "User Name",
+    "key": "username",
+    "placeholder": "Enter your username",
+    "inputType": "text",
+    "validationMessage": "Username is required and must be alphanumeric."
+  },
+  "email": {
+    "label": "Email",
+    "key": "email",
+    "placeholder": "Enter your email",
+    "inputType": "email",
+    "validationMessage": "Enter a valid email address."
+  },
+  "password": {
+    "label": "Password",
+    "key": "password",
+    "placeholder": "Enter your password",
+    "inputType": "password",
+    "validationMessage": "Password must be at least 8 characters, including a number and a special character."
+  },
+  "dateOfBirth": {
+    "label": "Date of Birth",
+    "key": "dateOfBirth",
+    "placeholder": "Select your date of birth",
+    "inputType": "date",
+    "validationMessage": "Please select a valid date of birth."
+  },
+  "presentAddress": {
+    "label": "Present Address",
+    "key": "presentAddress",
+    "placeholder": "Enter your present address",
+    "inputType": "text",
+    "validationMessage": "Present address is required."
+  },
+  "permanentAddress": {
+    "label": "Permanent Address",
+    "key": "permanentAddress",
+    "placeholder": "Enter your permanent address",
+    "inputType": "text",
+    "validationMessage": "Permanent address is required."
+  },
+  "city": {
+    "label": "City",
+    "key": "city",
+    "placeholder": "Enter your city",
+    "inputType": "text",
+    "validationMessage": "City is required."
+  },
+  "postalCode": {
+    "label": "Postal Code",
+    "key": "postalCode",
+    "placeholder": "Enter your postal code",
+    "inputType": "number",
+    "validationMessage": "Postal code must be a valid number."
+  },
+  "country": {
+    "label": "Country",
+    "key": "country",
+    "placeholder": "Enter your country",
+    "inputType": "text",
+    "validationMessage": "Country is required."
+  }
+}

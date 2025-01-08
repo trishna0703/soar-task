@@ -1,0 +1,24 @@
+@import '../../index';
+
+.settingsContent {
+    padding: 1rem 2rem !important;
+
+    .tab-title {
+        color: #718EBF;
+        width: 150px;
+        text-transform: capitalize;
+        font-family: $font-family;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 4px solid transparent;
+    }
+
+    .tab-title.Mui-selected {
+        border-bottom-color: #232323;
+        color: #232323;
+    }
+
+    .MuiTabs-indicator {
+        display: none;
+    }
+}
