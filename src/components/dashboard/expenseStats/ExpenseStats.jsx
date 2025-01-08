@@ -66,7 +66,7 @@ const ExpensePieChart = ({ transactions }) => {
   };
 
   return (
-    <Box className="w-full h-96 expenseStats">
+    <Box className="w-full h-96 generalBox">
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie

@@ -1,0 +1,63 @@
+@import '../../../index';
+
+.avatar {
+    overflow: hidden;
+    border-radius: 50px;
+    width: max-content;
+}
+
+.quickTransfersWrapper {
+    width: 450px;
+    overflow: hidden;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+.quickTransfers {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 450px;
+    overflow: hidden;
+}
+
+.favTransferDesignation {
+    font-size: 12px !important;
+    color: $secondary-text-color;
+}
+
+.favTransferName {
+    white-space: nowrap;
+    padding: 6px 0 2px;
+    color: $secondary-text-color;
+}
+
+.sendMoneySection {
+    padding: 10px;
+    margin-top: 10px;
+    white-space: nowrap;
+    align-items: center;
+    color: #718EBF;
+
+    .sendMoneyInput {
+        background-color: $lightShade2;
+        border-radius: 50px;
+        padding-left: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .MuiInputBase-root::before,
+        .MuiInputBase-root::after {
+            display: none;
+        }
+
+        button {
+            background-color: $secondary-text-color;
+            padding: 14px 20px;
+            border-radius: 50px;
+            color: $lightText;
+            text-transform: capitalize;
+        }
+    }
+}

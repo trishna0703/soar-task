@@ -13,42 +13,51 @@ import {
 import useTransactionsHistory from "../../../hooks/useTransactionsHistory";
 
 const BankingChart = ({ transactions }) => {
-  const chartData = useMemo(() => {
-    const dailyTotals = new Map();
+  // const chartData = useMemo(() => {
+  //   const dailyTotals = new Map();
 
-    transactions.forEach((transaction) => {
-      const date = new Date(transaction.date);
-      const dayName = date.toLocaleDateString("en-US", { weekday: "short" });
+  //   transactions.forEach((transaction) => {
+  //     const date = new Date(transaction.date);
+  //     const dayName = date.toLocaleDateString("en-US", { weekday: "short" });
 
-      if (!dailyTotals.has(dayName)) {
-        dailyTotals.set(dayName, { deposit: 0, withdraw: 0 });
-      }
+  //     if (!dailyTotals.has(dayName)) {
+  //       dailyTotals.set(dayName, { deposit: 0, withdraw: 0 });
+  //     }
 
-      const amount = Math.abs(transaction.amount);
-      if (transaction.amount > 0) {
-        dailyTotals.get(dayName).deposit += amount;
-      } else {
-        dailyTotals.get(dayName).withdraw += amount;
-      }
-    });
+  //     const amount = Math.abs(transaction.amount);
+  //     if (transaction.amount > 0) {
+  //       dailyTotals.get(dayName).deposit += amount;
+  //     } else {
+  //       dailyTotals.get(dayName).withdraw += amount;
+  //     }
+  //   });
 
-    const daysOrder = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    return Array.from(dailyTotals.entries())
-      .map(([day, values]) => ({
-        day,
-        deposit: values.deposit,
-        withdraw: values.withdraw,
-      }))
-      .sort((a, b) => daysOrder.indexOf(a.day) - daysOrder.indexOf(b.day));
-  }, [transactions]);
+  //   const daysOrder = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  //   return Array.from(dailyTotals.entries())
+  //     .map(([day, values]) => ({
+  //       day,
+  //       deposit: values.deposit,
+  //       withdraw: values.withdraw,
+  //     }))
+  //     .sort((a, b) => daysOrder.indexOf(a.day) - daysOrder.indexOf(b.day));
+  // }, [transactions]);
 
-  const maxValue = useMemo(() => {
-    const values = chartData.flatMap((item) => [item.deposit, item.withdraw]);
-    return Math.ceil(Math.max(...values) / 100) * 100;
-  }, [chartData]);
-
+  // const maxValue = useMemo(() => {
+  //   const values = chartData.flatMap((item) => [item.deposit, item.withdraw]);
+  //   return Math.ceil(Math.max(...values) / 100) * 100;
+  // }, [chartData]);
+  const chartData = [
+    { day: "Sat", deposit: 220, withdraw: 450 },
+    { day: "Sun", deposit: 120, withdraw: 320 },
+    { day: "Mon", deposit: 250, withdraw: 300 },
+    { day: "Tue", deposit: 350, withdraw: 450 },
+    { day: "Wed", deposit: 230, withdraw: 150 },
+    { day: "Thu", deposit: 230, withdraw: 380 },
+    { day: "Fri", deposit: 320, withdraw: 380 },
+  ];
+  console.log({ chartData });
   return (
-    <Box className="w-full h-96 weeklyActivity">
+    <Box className="w-full h-96 generalBox">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={chartData}
@@ -59,8 +68,8 @@ const BankingChart = ({ transactions }) => {
           <YAxis
             axisLine={false}
             tickLine={false}
-            domain={[0, maxValue]}
-            ticks={Array.from({ length: 6 }, (_, i) => i * (maxValue / 5))}
+            domain={[0, 500]}
+            ticks={[0, 100, 200, 300, 400, 500]}
           />
           <Bar
             dataKey="withdraw"

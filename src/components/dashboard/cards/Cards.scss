@@ -39,8 +39,12 @@
 }
 
 .visa {
-    background: #DFEAF2;
+    background: #ffffff;
     color: $darkShade1;
+
+    .cardNumberSection {
+        background: linear-gradient(180deg, rgb(239 239 239 / 35%) 0%, rgb(183 181 181 / 0%) 100%);
+    }
 
     label {
         color: $darkShade1;

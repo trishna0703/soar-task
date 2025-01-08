@@ -8,18 +8,18 @@
             "cardType": "amex"
         },
         {
-            "cardNumber": "5204-3344-5566-7788",
-            "validThru": "06/26",
-            "cardHolderName": "Alice Johnson",
-            "balance": 200.75,
-            "cardType": "master"
-        },
-        {
             "cardNumber": "6011-6677-5544-4433",
             "validThru": "09/24",
             "cardHolderName": "Alice Johnson",
             "balance": 100.00,
             "cardType": "visa"
+        },
+        {
+            "cardNumber": "5204-3344-5566-7788",
+            "validThru": "06/26",
+            "cardHolderName": "Alice Johnson",
+            "balance": 200.75,
+            "cardType": "master"
         },
         {
             "cardNumber": "6011-8899-9900-1122",
@@ -29,14 +29,14 @@
             "cardType": "master"
         },
         {
-            "cardNumber": "3714-554433-22110",
+            "cardNumber": "3714-5544-3365-2110",
             "validThru": "02/29",
             "cardHolderName": "Alice Johnson",
             "balance": 1850.25,
             "cardType": "visa"
         },
         {
-            "cardNumber": "3742-112233-66778",
+            "cardNumber": "3742-1122-5533-6778",
             "validThru": "03/30",
             "cardHolderName": "Alice Johnson",
             "balance": 7500.10,

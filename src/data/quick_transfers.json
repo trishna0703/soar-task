@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Alice Johnson",
+        "position": "Designer",
+        "avatar": "UserAvatar2"
+    },
+    {
+        "id": 2,
+        "name": "Bob Smith",
+        "position": "Developer",
+        "avatar": "UserAvatar1"
+    },
+    {
+        "id": 3,
+        "name": "Catherine Brown",
+        "position": "Co-founder",
+        "avatar": "UserAvatar3"
+    },
+    {
+        "id": 4,
+        "name": "David Wilson",
+        "position": "Manager",
+        "avatar": "UserAvatar4"
+    },
+    {
+        "id": 5,
+        "name": "Emily Davis",
+        "position": "Designer",
+        "avatar": "UserAvatar2"
+    },
+    {
+        "id": 6,
+        "name": "Franklin Moore",
+        "position": "Developer",
+        "avatar": "UserAvatar1"
+    },
+    {
+        "id": 7,
+        "name": "Grace Lee",
+        "position": "Co-founder",
+        "avatar": "UserAvatar4"
+    },
+    {
+        "id": 8,
+        "name": "Henry Taylor",
+        "position": "Manager",
+        "avatar": "UserAvatar3"
+    },
+    {
+        "id": 9,
+        "name": "Isabelle Martinez",
+        "position": "Designer",
+        "avatar": "UserAvatar1"
+    },
+    {
+        "id": 10,
+        "name": "Jack Anderson",
+        "position": "Developer",
+        "avatar": "UserAvatar2"
+    }
+]

@@ -1,6 +1,6 @@
 import "./Sidenav.scss";
 import React from "react";
-import * as Icons from "../../icons/icons";
+import * as Icons from "../../image-comps/icons";
 import MenuItems from "../../data/sidenav_menu.json";
 import Logo from "../../assets/mingcute_task-fill.svg";
 import { useLocation, useNavigate } from "react-router-dom";

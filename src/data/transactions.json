@@ -4,7 +4,8 @@
         "icon": "💰",
         "description": "Freelance Payment",
         "date": "2025-01-05",
-        "amount": 500.00
+        "amount": 500.00,
+        "category": "Others"
     },
     {
         "id": 2,
@@ -43,7 +44,7 @@
         "icon": "🏠",
         "description": "Rent Payment",
         "date": "2025-01-07",
-        "amount": -1500.00,
+        "amount": 750.00,
         "category": "Expense"
     },
     {
@@ -51,7 +52,7 @@
         "icon": "📱",
         "description": "Phone Bill",
         "date": "2025-01-07",
-        "amount": -85.00,
+        "amount": -185.00,
         "category": "Expense"
     },
     {
@@ -59,7 +60,7 @@
         "icon": "🍽️",
         "description": "Restaurant",
         "date": "2025-01-08",
-        "amount": -75.25,
+        "amount": -750.25,
         "category": "Entertainment"
     },
     {
@@ -75,7 +76,7 @@
         "icon": "🎮",
         "description": "Entertainment",
         "date": "2025-01-09",
-        "amount": -59.99,
+        "amount": -329.99,
         "category": "Entertainment"
     },
     {
@@ -107,7 +108,7 @@
         "icon": "🍕",
         "description": "Food Delivery",
         "date": "2025-01-11",
-        "amount": -45.50,
+        "amount": -120.50,
         "category": "Entertainment"
     },
     {

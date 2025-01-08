@@ -18,7 +18,7 @@ const Transactions = () => {
     <Box width={"30%"}>
       <Title title="Recent Transactions" />
       <Box className="recentTransactions">
-        <Box className="recentTransactionsInner">
+        <Box className="generalBox recentTransactionsInner">
           {recentTransactions.slice(0, 3).map((transaction) => {
             return (
               <Stack
