@@ -12,16 +12,49 @@ import {
   ResponsiveContainer,
   Area,
 } from "recharts";
-const generateSmoothData = (numPoints) => {
-  const amplitude1 = 20;
-  const amplitude2 = 13;
-  const offset = 100;
-  const period1 = 17;
-  const period2 = 30;
-  const phaseShift1 = Math.PI / 4;
-  const phaseShift2 = Math.PI / 4; // Phase shift for the second wave
 
+const generateSmoothData = (numPoints) => {
+  const amplitude1 = 22;
+  const amplitude2 = 15;
+  const offset = 100;
+  const period1 = 16;
+  const period2 = 29;
+  const phaseShift1 = Math.PI / 4;
+  const phaseShift2 = Math.PI / 4;
+
+  const formatDate = (date) => {
+    const months = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    return `${months[date.getMonth()]} ${date.getDate()}`;
+  };
+
+  const generateDates = (count) => {
+    const dates = [];
+    const startDate = new Date("2023-07-01");
+
+    for (let i = 0; i < count; i++) {
+      dates.push(new Date(startDate));
+      const increment = Math.floor(Math.random() * 3) + 4;
+      startDate.setDate(startDate.getDate() + increment);
+    }
+    return dates;
+  };
+
+  const dates = generateDates(numPoints);
   const data = [];
+
   for (let i = 0; i < numPoints; i++) {
     const x = i;
     const y =
@@ -29,25 +62,25 @@ const generateSmoothData = (numPoints) => {
       amplitude2 * Math.sin(((2 * Math.PI) / period2) * x + phaseShift2) +
       offset +
       2 * x;
+
     data.push({
-      date: `2023-01-${i + 1}`,
+      date: formatDate(dates[i]),
       balance: Math.max(0, Math.min(600, y)).toFixed(2),
     });
   }
   return data;
 };
-// Example usage
 
 const BalanceTrendChart = () => {
-  const data = generateSmoothData(60); // 30 points, amplitude=50, period=30, offset=100
+  const data = generateSmoothData(60);
 
   return (
-    <Box style={{ width: "100%", height: "400px" }}>
+    <Box style={{ width: "100%", height: "260px" }}>
       <ResponsiveContainer>
         <AreaChart
           data={data.map((item) => ({
             ...item,
-            balanceShadow: item.balance - 40, // Offset the shadow line downward
+            balanceShadow: item.balance - 40,
           }))}
           margin={{ top: 20, right: 30, left: 20, bottom: 10 }}
         >
@@ -62,17 +95,17 @@ const BalanceTrendChart = () => {
             dataKey="date"
             interval={6}
             tickFormatter={(value) => value.split(" ")[0]}
+            axisLine={false}
           />
-          <YAxis />
+          <YAxis axisLine={false} />
           <Tooltip />
-          {/* Shadow Line */}
           <Area
             type="monotoneX"
             dataKey="balance"
-            stroke="#1814F3" /* Solid blue */
+            stroke="#1814F3"
             strokeWidth={3}
             dot={false}
-            fill="url(#colorBalance)" /* Reference the gradient by ID */
+            fill="url(#colorBalance)"
           />
         </AreaChart>
       </ResponsiveContainer>

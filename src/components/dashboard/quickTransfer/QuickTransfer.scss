@@ -14,12 +14,19 @@
 }
 
 .quickTransfers {
-    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 450px;
     overflow: hidden;
+    padding: 12px 0;
+
+    .selected {
+        * {
+            font-weight: 600 !important;
+        }
+    }
 }
+
 
 .favTransferDesignation {
     font-size: 12px !important;
@@ -27,6 +34,7 @@
 }
 
 .favTransferName {
+    text-align: center;
     white-space: nowrap;
     padding: 6px 0 2px;
     color: $secondary-text-color;
@@ -38,6 +46,10 @@
     white-space: nowrap;
     align-items: center;
     color: #718EBF;
+
+    * {
+        font-family: $font-family !important;
+    }
 
     .sendMoneyInput {
         background-color: $lightShade2;
@@ -60,4 +72,13 @@
             text-transform: capitalize;
         }
     }
+}
+
+.nextButton {
+    background-color: transparent !important;
+    border-radius: 50px !important;
+    box-shadow: 0px 1px 2px 0 #ccc;
+    width: 40px;
+    min-width: 40px !important;
+    height: 40px;
 }
