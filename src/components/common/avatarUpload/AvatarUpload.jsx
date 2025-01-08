@@ -24,7 +24,7 @@ const AvatarUpload = () => {
           {avatar ? (
             <img src={avatar} alt="Avatar" className="avatarPreview" />
           ) : (
-            <UserAvatar1 />
+            <UserAvatar1 className="avatarPreview" />
           )}
         </Typography>
         <Typography component={"span"} className="editIcon">

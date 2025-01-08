@@ -8,6 +8,18 @@
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: $breakpoint-tablet-md) {
+        width: 100%;
+    }
+
+    .headerInner {
+        @media (max-width: $breakpoint-tablet-md) {
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+    }
 
     .pageTitle {
         font-size: 28px !important;
@@ -20,6 +32,53 @@
         width: 70%;
         margin-left: auto;
         justify-content: flex-end;
+
+        @media (max-width: $breakpoint-tablet-md) {
+            width: max-content;
+            margin-left: initial;
+        }
+
+        .searchInput {
+
+            @media (max-width: $breakpoint-tablet-md) {
+                display: none !important;
+            }
+
+        }
+
+        .round-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $lightShade2;
+            padding: 10px;
+            margin: 6px 10px;
+            border-radius: 50px;
+            width: 45px;
+            height: 45px;
+
+            svg {
+                path {
+                    fill: $lightShade3;
+                }
+            }
+
+            @media (max-width: $breakpoint-tablet-md) {
+                display: none !important;
+            }
+        }
+
+        .avatar {
+            display: inline-block;
+            margin: 4px 8px;
+            width: 50px;
+            height: 50px;
+
+            div {
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 
     .searchInput {
@@ -39,35 +98,37 @@
         input {
             padding-left: 10px;
         }
+
     }
 
-    .round-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $lightShade2;
-        padding: 10px;
-        margin: 6px 10px;
-        border-radius: 50px;
-        width: 45px;
-        height: 45px;
 
-        svg {
-            path {
-                fill: $lightShade3;
+    .mobileMetaSection {
+        display: none;
+
+        @media (max-width: $breakpoint-tablet-md) {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .searchInput {
+            @media (max-width: $breakpoint-tablet-md) {
+                width: 100%;
+                text-align: start;
+                justify-content: flex-start;
             }
+
+
         }
     }
 
-    .avatar {
-        display: inline-block;
-        margin: 4px 8px;
-        width: 50px;
-        height: 50px;
+    .mobileSidenav {
+        display: none;
 
-        div {
-            width: 100%;
-            height: 100%;
+        @media (max-width: $breakpoint-tablet-md) {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

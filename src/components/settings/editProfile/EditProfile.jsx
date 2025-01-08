@@ -2,10 +2,10 @@ import { Box, Stack } from "@mui/material";
 import React, { useState } from "react";
 import "./EditProfile.scss";
 import FormFields from "../../../data/ProfileFormFields.json";
-import InputField from "../../../components/common/input/InputField";
-import PrimaryButton from "../../../components/common/button/Button";
+import InputField from "../../common/input/InputField";
+import PrimaryButton from "../../common/button/Button";
 import { validateFieldData } from "../../../utils/utils";
-import AvatarUpload from "../../../components/common/avatarUpload/AvatarUpload";
+import AvatarUpload from "../../common/avatarUpload/AvatarUpload";
 
 const initialFormState = Object.keys(FormFields).reduce((acc, key) => {
   acc[key] = { value: "", error: false };
@@ -14,7 +14,6 @@ const initialFormState = Object.keys(FormFields).reduce((acc, key) => {
 const EditProfile = () => {
   const [fieldValues, setFieldValues] = useState(initialFormState);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  console.log({ fieldValues });
 
   const handleSubmit = () => {
     setIsSubmitting(true);
@@ -38,8 +37,8 @@ const EditProfile = () => {
       <Stack
         direction={"row"}
         alignItems={"flex-start"}
-        spacing={2}
         justifyContent={"space-between"}
+        className="editProfileWrapper"
       >
         <AvatarUpload />
         <Stack

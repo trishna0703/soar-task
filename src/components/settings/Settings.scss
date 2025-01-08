@@ -3,6 +3,14 @@
 .settingsContent {
     padding: 1rem 2rem !important;
 
+    .tabPanel {
+        padding: 2rem;
+
+        @media (max-width: $breakpoint-tablet-md) {
+            padding: 12px;
+        }
+    }
+
     .tab-title {
         color: #718EBF;
         width: 150px;
@@ -11,6 +19,17 @@
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
         border-bottom: 4px solid transparent;
+
+        @media (max-width: $breakpoint-tablet-md) {
+            width: max-content;
+            padding: 12px;
+        }
+    }
+
+    .MuiTabs-flexContainer {
+        @media (max-width: $breakpoint-tablet-md) {
+            justify-content: space-between;
+        }
     }
 
     .tab-title.Mui-selected {
@@ -20,5 +39,9 @@
 
     .MuiTabs-indicator {
         display: none;
+    }
+
+    @media (max-width: $breakpoint-tablet-md) {
+        padding: 10px !important;
     }
 }

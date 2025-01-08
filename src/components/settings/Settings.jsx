@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Tabs, Tab, Typography, Box } from "@mui/material";
 import "./Settings.scss";
-import EditProfile from "../../pages/settings/editProfile/EditProfile";
+import EditProfile from "./editProfile/EditProfile";
 const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
 
@@ -14,7 +14,7 @@ const TabPanel = (props) => {
       {...other}
     >
       {value === index && (
-        <Box p={3}>
+        <Box className="tabPanel">
           <Typography>{children}</Typography>
         </Box>
       )}

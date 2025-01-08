@@ -18,4 +18,9 @@ body {
     margin-left: auto;
     background-color: $lightShade2;
     padding: 2rem;
+
+    @media (max-width: $breakpoint-tablet-md) {
+        width: 100%;
+        padding: 10px;
+    }
 }

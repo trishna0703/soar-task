@@ -46,6 +46,10 @@
         flex-direction: column;
         width: 45%;
 
+        @media (max-width: $breakpoint-tablet-md) {
+            width: 100%;
+        }
+
         label {
             font-size: 14px !important;
             color: $darkShade1;
@@ -89,6 +93,11 @@
         font-family: $font-family;
         margin: 2rem;
         min-width: 200px;
+
+        @media (max-width: $breakpoint-tablet-md) {
+            width: 100%;
+            margin: 2rem 0;
+        }
     }
 
     .disabledButton {
@@ -101,6 +110,13 @@
         width: 70px;
         height: 70px;
         object-fit: cover;
+
+        @media (max-width: $breakpoint-tablet-md) {
+            width: 125px;
+            height: 125px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
     }
 
 }
