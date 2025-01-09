@@ -3,6 +3,10 @@
         font-family: $font-family !important;
     }
 
+    .primaryColor {
+        color: #343C6A !important;
+    }
+
     .sectionTitle {
         font-size: 22px;
         font-weight: 600;
@@ -39,6 +43,8 @@
         border-radius: 50px;
         width: max-content;
         display: inline-block;
+
+
     }
 
     .inputFieldWrapper {

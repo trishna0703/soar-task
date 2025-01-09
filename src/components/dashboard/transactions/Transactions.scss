@@ -34,3 +34,12 @@
         margin: 10px;
     }
 }
+
+.recentTransactionsWrapper {
+    width: 30%;
+
+    @media (max-width:$breakpoint-tablet-md) {
+        width: 100%;
+
+    }
+}

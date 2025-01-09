@@ -70,7 +70,7 @@ const generateSmoothData = (numPoints) => {
 };
 
 const BalanceTrendChart = () => {
-  const data = generateSmoothData(60);
+  const data = generateSmoothData(40);
 
   return (
     <Box style={{ width: "100%", height: "260px" }}>
@@ -113,7 +113,7 @@ const BalanceTrendChart = () => {
 
 const BalanceHistory = () => {
   return (
-    <Box width={"55%"}>
+    <Box width={"55%"} className="wrapperContainer">
       <Title title="Balance History" />
       <Box className="generalBox">
         <BalanceTrendChart />

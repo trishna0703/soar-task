@@ -8,9 +8,28 @@
     left: 0;
     border-right: 1px solid #E6EFF5;
     background: #fff;
+    height: 100%;
+    z-index: 1;
 
     @media (max-width: $breakpoint-tablet-md) {
-        display: none !important;
+        width: 40vw;
+    }
+
+    @media (max-width: $breakpoint-mobile-md) {
+        width: 60vw;
+    }
+
+    @media (max-width: $breakpoint-mobile-sm) {
+        width: 80vw;
+    }
+
+    .closeSidebar {
+        display: none;
+        color: #343C6A;
+
+        @media (max-width: $breakpoint-tablet-md) {
+            display: inline-block;
+        }
     }
 
     .menuItem {
@@ -22,6 +41,10 @@
         border-bottom: 5px solid transparent;
         font-family: $font-family;
 
+        @media (max-width: $breakpoint-desktop-md) {
+            padding: 14px 20px;
+        }
+
         h3 {
             line-height: 21.78px;
             text-align: left;
@@ -30,7 +53,16 @@
         }
 
         .menuIcon {
-            width: 20%;
+            width: 30%;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 14px;
+
+            @media (max-width: $breakpoint-tablet-md) {
+                justify-content: flex-start;
+                width: auto;
+
+            }
 
             svg {
                 width: 25px;
@@ -53,8 +85,17 @@
     }
 
     .logoWrapper {
-        padding: 32px 40px;
-        width: max-content;
+        padding: 32px;
+        width: 100%;
+        justify-content: center;
+
+        @media (max-width: $breakpoint-desktop-md) {
+            padding: 32px 10px;
+        }
+
+        @media (max-width: $breakpoint-tablet-md) {
+            justify-content: flex-start;
+        }
 
         img {
             width: 20%;
@@ -66,6 +107,10 @@
             font-weight: 700;
             display: inline-block;
             margin: 0;
+
+            @media (max-width: $breakpoint-tablet-sm) {
+                font-size: 20px;
+            }
         }
     }
 }

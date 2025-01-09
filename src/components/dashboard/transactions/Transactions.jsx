@@ -15,7 +15,7 @@ const Transactions = () => {
     }).format(date);
   };
   return (
-    <Box width={"30%"}>
+    <Box className="wrapperContainer recentTransactionsWrapper">
       <Title title="Recent Transactions" />
       <Box className="recentTransactions">
         <Box className="generalBox recentTransactionsInner">

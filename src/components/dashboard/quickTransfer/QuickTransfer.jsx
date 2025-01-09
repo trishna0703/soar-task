@@ -20,7 +20,7 @@ const QuickTransfer = () => {
   }, [offset, favTransfers]);
 
   return (
-    <Box>
+    <Box className="wrapperContainer">
       <Title title="Quick Transfer" />
       <Box className="generalBox quickTransfersWrapper">
         <Stack
@@ -41,7 +41,7 @@ const QuickTransfer = () => {
                   onClick={() => setSelectedContactId(favs.id)}
                   className={`${
                     favs.id === selectedContactId ? "selected" : ""
-                  } cursor-pointer`}
+                  } cursor-pointer quickContact`}
                 >
                   <Typography component={"span"} className="avatar">
                     <UserAvatar />
@@ -74,7 +74,7 @@ const QuickTransfer = () => {
           </Button>
         </Stack>
         <Stack direction={"row"} spacing={2} className="sendMoneySection">
-          <Typography component={"body1"}>Write Amount</Typography>
+          <Typography variant={"body1"}>Write Amount</Typography>
           <Typography component={"div"} className="sendMoneyInput">
             <Input placeholder="00.00" />
             <Button endIcon={<SendIcon />}>Send</Button>

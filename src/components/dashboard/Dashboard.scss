@@ -1,9 +1,20 @@
 @import '../../index';
 
 .dashboardContent {
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: center;
-    // justify-content: space-between;
     background-color: #f5f5f5;
+
+    @media (max-width:$breakpoint-tablet-md) {
+        justify-content: center;
+    }
+
+    @media (max-width:$breakpoint-tablet-sm) {
+        justify-content: center;
+        background-color: #fff;
+    }
+
+    .wrapperContainer {
+        @media (max-width:$breakpoint-tablet-md) {
+            width: 100%;
+        }
+    }
 }

@@ -23,4 +23,8 @@ body {
         width: 100%;
         padding: 10px;
     }
+
+    @media (max-width: $breakpoint-tablet-sm) {
+        background-color: #fff;
+    }
 }

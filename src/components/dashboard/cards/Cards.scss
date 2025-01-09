@@ -6,6 +6,10 @@
     width: 370px;
     border-radius: 25px;
 
+    @media (max-width:$breakpoint-tablet-sm) {
+        width: 100%;
+    }
+
     * {
         font-family: $font-family !important;
 
@@ -41,6 +45,7 @@
 .visa {
     background: #ffffff;
     color: $darkShade1;
+    box-shadow: 1px 1px 3px 2px #ccc;
 
     .cardNumberSection {
         background: linear-gradient(180deg, rgb(239 239 239 / 35%) 0%, rgb(183 181 181 / 0%) 100%);

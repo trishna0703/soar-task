@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import React, { useMemo } from "react";
+import React from "react";
 import Title from "../../common/title/Title";
 import "./WeeklyActivity.scss";
 import {
@@ -10,42 +10,8 @@ import {
   CartesianGrid,
   ResponsiveContainer,
 } from "recharts";
-import useTransactionsHistory from "../../../hooks/useTransactionsHistory";
 
-const BankingChart = ({ transactions }) => {
-  // const chartData = useMemo(() => {
-  //   const dailyTotals = new Map();
-
-  //   transactions.forEach((transaction) => {
-  //     const date = new Date(transaction.date);
-  //     const dayName = date.toLocaleDateString("en-US", { weekday: "short" });
-
-  //     if (!dailyTotals.has(dayName)) {
-  //       dailyTotals.set(dayName, { deposit: 0, withdraw: 0 });
-  //     }
-
-  //     const amount = Math.abs(transaction.amount);
-  //     if (transaction.amount > 0) {
-  //       dailyTotals.get(dayName).deposit += amount;
-  //     } else {
-  //       dailyTotals.get(dayName).withdraw += amount;
-  //     }
-  //   });
-
-  //   const daysOrder = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  //   return Array.from(dailyTotals.entries())
-  //     .map(([day, values]) => ({
-  //       day,
-  //       deposit: values.deposit,
-  //       withdraw: values.withdraw,
-  //     }))
-  //     .sort((a, b) => daysOrder.indexOf(a.day) - daysOrder.indexOf(b.day));
-  // }, [transactions]);
-
-  // const maxValue = useMemo(() => {
-  //   const values = chartData.flatMap((item) => [item.deposit, item.withdraw]);
-  //   return Math.ceil(Math.max(...values) / 100) * 100;
-  // }, [chartData]);
+const BankingChart = () => {
   const chartData = [
     { day: "Sat", deposit: 220, withdraw: 450 },
     { day: "Sun", deposit: 120, withdraw: 320 },
@@ -55,7 +21,6 @@ const BankingChart = ({ transactions }) => {
     { day: "Thu", deposit: 230, withdraw: 380 },
     { day: "Fri", deposit: 320, withdraw: 380 },
   ];
-  console.log({ chartData });
   return (
     <Box className="w-full h-96 generalBox">
       <ResponsiveContainer width="100%" height="100%">
@@ -90,12 +55,10 @@ const BankingChart = ({ transactions }) => {
 };
 
 const WeeklyActivity = () => {
-  const transactions = useTransactionsHistory();
-
   return (
-    <Box width={"65%"}>
+    <Box width={"65%"} className="wrapperContainer">
       <Title title="Weekly Activity" />
-      <BankingChart {...{ transactions }} />
+      <BankingChart />
     </Box>
   );
 };

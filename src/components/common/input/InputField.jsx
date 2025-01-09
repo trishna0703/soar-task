@@ -14,7 +14,7 @@ const InputField = ({ field, onChange, error }) => {
         className={`customInputField ${error ? "field-error" : ""}`}
       />
       {error && (
-        <Typography className="validationMsg" component={"body1"}>
+        <Typography className="validationMsg" variant={"body1"}>
           {validationMessage}
         </Typography>
       )}

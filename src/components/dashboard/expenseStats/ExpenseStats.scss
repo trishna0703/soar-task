@@ -5,3 +5,11 @@
     border-radius: 25px;
     padding: 1.5rem 0;
 }
+
+.expenseStatsWrapper {
+    width: 30%;
+
+    @media (max-width:$breakpoint-tablet-sm) {
+        width: 100%;
+    }
+}

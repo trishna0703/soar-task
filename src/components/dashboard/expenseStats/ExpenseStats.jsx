@@ -114,7 +114,7 @@ const ExpensePieChart = ({ transactions }) => {
 const ExpenseStats = () => {
   const transactions = useTransactionsHistory();
   return (
-    <Box width={"30%"}>
+    <Box className="wrapperContainer expenseStatsWrapper">
       <Title title="Expense Statistics" />
       <ExpensePieChart {...{ transactions }} />
     </Box>

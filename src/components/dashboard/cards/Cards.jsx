@@ -10,7 +10,7 @@ const Cards = () => {
   const creditCards = useCreditCards();
   const navigate = useNavigate();
   return (
-    <Box>
+    <Box className="wrapperContainer">
       <Title title="My Cards">
         <Button
           variant="text"
@@ -20,7 +20,7 @@ const Cards = () => {
           See All
         </Button>
       </Title>
-      <Stack direction={"row"} gap={4}>
+      <Stack direction={"row"} gap={4} flexWrap={"wrap"}>
         {creditCards.slice(0, 2).map((card) => (
           <CreditCard {...{ card }} key={card.cardNumber} />
         ))}

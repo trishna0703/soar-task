@@ -5,6 +5,15 @@
     overflow: hidden;
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
+
+    @media (max-width:$breakpoint-tablet-md) {
+        width: 100%;
+    }
+
+    @media (max-width:$breakpoint-mobile-sm) {
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
+    }
 }
 
 .quickTransfers {
@@ -14,9 +23,35 @@
     overflow: hidden;
     padding: 12px 0;
 
+    @media (max-width:$breakpoint-tablet-md) {
+        width: 80%;
+    }
+
+    @media (max-width:$breakpoint-tablet-sm) {
+        width: 100%;
+    }
+
     .selected {
         * {
             font-weight: 600 !important;
+        }
+    }
+
+    .quickContact {
+        @media (max-width:$breakpoint-mobile-sm) {
+            margin-left: 0;
+            margin-right: 10px;
+            width: 30%;
+        }
+
+        .avatar {
+            @media (max-width: $breakpoint-mobile-sm) {
+                width: 55px;
+                height: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 }
@@ -32,6 +67,10 @@
     white-space: nowrap;
     padding: 6px 0 2px;
     color: $secondary-text-color;
+
+    @media (max-width:$breakpoint-mobile-sm) {
+        white-space: pre-wrap;
+    }
 }
 
 .sendMoneySection {
@@ -40,6 +79,10 @@
     white-space: nowrap;
     align-items: center;
     color: #718EBF;
+
+    @media (max-width:$breakpoint-tablet-md) {
+        justify-content: space-between;
+    }
 
     * {
         font-family: $font-family !important;
@@ -52,6 +95,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .MuiInputBase-root.MuiInput-root {
+            @media (max-width:$breakpoint-mobile-sm) {
+
+                width: 50%;
+            }
+        }
 
         button {
             background-color: $secondary-text-color;
@@ -70,4 +120,8 @@
     width: 40px;
     min-width: 40px !important;
     height: 40px;
+
+    @media (max-width: $breakpoint-mobile-sm) {
+        margin-left: 0px !important;
+    }
 }
