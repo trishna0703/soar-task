@@ -13,6 +13,7 @@ const Sidenav = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const showSidebar = useSelector((state) => state.sidebar.isVisible);
+  const isMobileOrTablet = window.matchMedia("(max-width: 992px)").matches;
 
   return (
     showSidebar && (
@@ -51,7 +52,9 @@ const Sidenav = () => {
               }`}
               onClick={() => {
                 navigate(menu.href);
-                dispatch(toggleSidebar());
+                if (isMobileOrTablet) {
+                  dispatch(toggleSidebar());
+                }
               }}
             >
               <Typography component={"div"} className="menuIcon">
