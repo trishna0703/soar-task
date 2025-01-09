@@ -1,5 +1,4 @@
 import React from "react";
-import "./Settings.scss";
 import { Box } from "@mui/material";
 import SettingsContent from "../../components/settings/Settings";
 const Settings = () => {
